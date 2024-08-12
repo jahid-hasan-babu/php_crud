@@ -57,7 +57,8 @@
                                     </td>
                                     <td>
                                         <a href="status.php?id=<?= $student['id'] ?>"
-                                            class="btn <?= $student['status'] == 1 ? 'bg-warning' : 'bg-success' ?>""> <?= $student['status'] == 1 ? 'Deactive' : 'Active' ?></a>
+                                            class="btn text-white <?= $student['status'] == 1 ? 'bg-warning' : 'bg-success' ?>">
+                                            <?= $student['status'] == 1 ? 'Deactive' : 'Active' ?></a>
                                     </td>
                                 </tr>
                                 <?php
@@ -73,9 +74,8 @@
     </div>
 
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                                            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                                            crossorigin="anonymous">
-                                            </script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
 
