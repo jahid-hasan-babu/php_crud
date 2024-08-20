@@ -25,21 +25,25 @@
                 <div class="card shadow-lg border-0">
                     <h4 class="text-center pt-4 fw-bold text-success">Create Student</h4>
                     <div class="card-body">
-                        <form action="../insert.php" method="POST">
+                        <form action="insert.php" method="POST">
                             <div class="form-group mb-3">
                                 <label class="form-label fw-bold text-dark">Name</label>
                                 <input type="text" class="form-control border-success no-outline" name="name"
                                     placeholder="Enter your name">
+                                <span class="text-danger"><?= isset($err_name) ? $err_name : '' ?></span>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label fw-bold text-dark">Student ID</label>
                                 <input type="text" class="form-control border-success no-outline" name="student_id"
                                     placeholder="Enter your ID">
+                                <span class="text-danger"><?= isset($err_student_id) ? $err_student_id : '' ?></span>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label fw-bold text-dark">Phone</label>
                                 <input type="tel" class="form-control border-success no-outline" name="phone"
                                     placeholder="Enter your phone number">
+                                <span class="text-danger"><?= isset($err_phone) ? $err_phone : '' ?></span>
+
                             </div>
                             <div class="form-group text-end">
                                 <input type="submit" name="submit" class="btn btn-success mt-3 px-5 no-outline"

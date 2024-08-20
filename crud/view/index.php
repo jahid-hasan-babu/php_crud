@@ -16,7 +16,7 @@
             <div class="card">
                 <div class="card-header">
                     <h1>Student List</h1>
-                    <a href="view/create.php" class="btn btn-success float-end">Add Student</a>
+                    <a href="create.php" class="btn btn-success float-end">Add Student</a>
                 </div>
                 <div class="card-body">
                     <div class="col-12">

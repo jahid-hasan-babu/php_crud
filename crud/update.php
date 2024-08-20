@@ -2,7 +2,7 @@
 include('db/db_connection.php');
 
 if(isset($_POST['submit'])){
-$id = $_POST['id'];
+  $id = $_POST['id'];
    $name = $_POST['name'];
    $student_id = $_POST['student_id'];
    $phone = $_POST['phone'];
